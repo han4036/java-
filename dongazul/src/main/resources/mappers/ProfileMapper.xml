@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.dongazul.myapp.mapper.ProfileMapper">
+	
+	<insert 
+		parameterType="com.dongazul.myapp.domain.ProfileVO"
+    	id="insert">
+    	INSERT INTO PROFILE (email, nickname, age, gender, zone, introduce )
+    	VALUES (#{email}, #{nickname}, #{age}, #{gender}, #{zone}, #{introduce})
+   	</insert>
+   	
+    
+    <select 
+    	id="profileSelect"
+    	resultType="com.dongazul.myapp.domain.ProfileVO">
+    	
+    	SELECT *
+    	FROM PROFILE
+    	WHERE email = #{email}	
+    	
+    </select>
+
+	<select 
+		id="mSelect"
+		resultType="com.dongazul.myapp.domain.ProfileVO">
+		
+		SELECT *
+		FROM PROFILE
+		WHERE gender = 'M'
+
+	</select>
+
+	<select 
+		id="wSelect"
+		resultType="com.dongazul.myapp.domain.ProfileVO">
+		
+		SELECT *
+		FROM PROFILE
+		WHERE gender = 'W'
+
+	</select>
+
+
+
+    
+   	
+   	
+
+</mapper>
