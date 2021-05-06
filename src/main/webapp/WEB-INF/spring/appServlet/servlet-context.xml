@@ -59,7 +59,7 @@
 		
 	
 	<beans:bean class="java.lang.String" id="uploadPath">
-		<beans:constructor-arg value="C:\opt\eclipse\workspace\JEE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\dongazul\resources" />
+		<beans:constructor-arg value="C:\opt\eclipse\workspace\JEE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\prac\resources" />
 	</beans:bean>
 	
 	<!-- 일반 파일 업로드 경로 -->
