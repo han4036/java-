@@ -66,10 +66,10 @@
     <script type="text/javascript">
 
 	$(document).ready(function () {
-    var msg = '${msg}';
-    if (msg.length > 0) {
-        alert(msg);
-    }
+    	var msg = '${msg}';
+	    if (msg.length > 0) {
+	        alert(msg);
+	    }
     
     })
     

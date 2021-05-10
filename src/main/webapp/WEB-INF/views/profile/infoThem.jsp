@@ -40,6 +40,14 @@
             </div>
 
         </div>
+        
+        
+        <form action="/chat/open" post="POST">
+        
+        	<input type="submit" value="채팅보내기">	
+        	
+        
+        </form>
 
         <form action="/matching/swipe" method="get">
             <input type="submit" value="←">

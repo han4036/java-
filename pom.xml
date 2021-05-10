@@ -140,6 +140,14 @@
 	          <version>${org.springframework-version}</version>
 	    </dependency>
 	    
+	    <!-- spring-messaging -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-messaging</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+	    
+	    
 		<!-- ==============To return JSON or XML ============== -->
 
 		<!--jackson-databind -->

@@ -173,7 +173,7 @@
 
 					<div class="login_id">
 						<label class="control-label" for="phonenumber">Phone-number</label>
-						<input class="form-control" type="text" id="phonenumber" name="phonenumber" />
+						<input class="form-control" type="number" id="phonenumber" name="phonenumber" />
 					</div>
 					<div class="submit">
 						<button class="submit" type="submit" id="submit">Sign-Up</button>

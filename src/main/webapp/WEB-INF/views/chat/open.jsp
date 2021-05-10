@@ -37,13 +37,13 @@
 			name="addForm" 
 			onsubmit="submitAddForm(this); 
 			return false;"
-			 action="./doAdd" method="POST">
+			 action="/chat/open" method="POST">
 		
 		<div>
 			<span>채팅방 이름</span>
 			<div>
 				<input autocomplete="off" type="text" name="title"
-				 required="required", autofocus="autofocus", maxlength="30" placeholder="이메일">
+				 required="required", autofocus="autofocus", maxlength="30" placeholder="채팅방 이름">
 			
 			</div>
 		</div>

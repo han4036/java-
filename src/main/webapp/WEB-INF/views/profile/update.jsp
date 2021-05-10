@@ -44,7 +44,7 @@
          <section id="container">
              <form action="/profile/update" method="POST" enctype="multipart/form-data">
              <div class="pictures">
-                <div class="picture_box"><img src="" />
+                <div class="picture_box"><img src="${profile.imageRoot }" />
                     <svg width="35" height="35" ><path d="M9 17.5 H26, M17.5 9 V26" stroke="#f0f0f0" stroke-width="2.7" stroke-linejoin="round"/></svg>
                 </button></div>    
                 <input type="file" id="myPicture" name="file">
@@ -62,15 +62,15 @@
                <label class="control-label" for="nickname">닉네임</label>
                <br>
                <input class="form-control" type="nickname" id="nickname" 
-                      name="nickname" value="${__PROFILE__.nickname}"
-                      placeholder="상대방에게 보여줄 닉네임을 정해주세요." />
+                      name="nickname" value="${profile.nickname}"
+                       />
            </div>
            <div class="form-group has-feedback">
           
                <label class="control-label" for="age">나이</label>
                <br>
                <input class="form-control" type="number" min=0 id="age" 
-                      name="age" value="${__PROFILE__.age}" placeholder="age" />
+                      name="age" value="${profile.age}" placeholder="age"/>
                       <span id="chkNotice"></span>
            </div>
            
@@ -86,6 +86,7 @@
                         <label class="control-label" for="zone">지역</label>
                         <br>
                         <select name="zone" class="form-control" id="zone">
+                       		<option value="${ profile.zone }">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ profile.zone }</option>
                             <option value="서울">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울</option>
                             <option value="춘천">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;인천</option>
                             <option value="대전">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대전</option>
@@ -113,7 +114,7 @@
                <br>
                <select name="hobby1" class="form-control">
 
-                   <option value="">없음
+                   <option value="${ profile.hobby1 }" selected>${ profile.hobby1 }
                    <option value="운동">운동
                    <option value="요리">요리
                    <option value="독서">독서
@@ -130,7 +131,7 @@
           
                <select name="hobby2" class="form-control">
                    
-                   <option value="">없음
+                   <option value="${ profile.hobby2 }" selected>${ profile.hobby2 }
                    <option value="운동">운동
                    <option value="요리">요리
                    <option value="독서">독서
@@ -147,7 +148,7 @@
           
                <select name="hobby3" class="form-control">
                    
-                   <option value="">없음
+                   <option value="${ profile.hobby3 }" selected>${ profile.hobby3 }
                    <option value="운동">운동
                    <option value="요리">요리
                    <option value="독서">독서
@@ -166,8 +167,8 @@
                <label class="control-label" for="introduce">Self-Introduction</label>
                <br>
                <textarea class="form-control" type="content" 
-               rows="10" id="introduce" name="introduce" value="${__PROFILE__.introduce}"
-               placeholder="자기소개를 작성해주세요."></textarea>
+               rows="10" id="introduce" name="introduce" 
+              >${ profile.introduce }</textarea>
                <div id=text_cnt>(0/500)</div>
            </div>
 
